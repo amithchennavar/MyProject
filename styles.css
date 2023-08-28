@@ -1,0 +1,155 @@
+body{
+	margin:0;
+	padding:0;
+	background: #ccc;
+	font-family:'Open Sans', sans-serif !important ;
+}
+
+.navbar ul{
+	list-style:none;
+	background: #8caed1;
+	padding: 0;
+	margin: 0;
+	border-radius: 10px;
+}
+.navbar li
+{
+	display: inline-block;
+	
+}
+
+.navbar a
+{
+	text-decoration: none;
+	color:#fff;
+	width: 100%;
+	display: block;
+	padding : 25px 20px;
+	font-size :15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+.navbar a:hover
+{
+ color: #ccc;
+}
+
+body.page1 {
+    margin: 1cm; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url('./Images/img3.jpg'); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Keep the background fixed even while scrolling */
+	
+}
+
+body.page2
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.page2 div
+{
+	margin: 0.25cm;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-style: initial;
+}
+
+.page2 button
+{
+		background-color: #007BFF; /* Set your desired background color */
+		color: #fff; /* Set the text color */
+		padding: 10px 20px; /* Adjust padding for button size */
+		border: none; /* Remove the default button border */
+		border-radius: 5px; /* Add rounded corners */
+		cursor: pointer; /* Change cursor to pointer on hover */
+	
+}
+
+.page2 h2
+{
+	font-size :30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 20px; /* Adjust padding for button size */
+	border: none; /* Remove the default button border */
+	border-radius: 5px; /* Add rounded corners */
+	cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.bord
+{
+	position: absolute;
+	border: 3px solid lightblue; 
+	padding: 5px;
+	/* display: inline-block; */
+	text-align: center;
+	border-radius: 10px;
+	word-spacing: 1cm;
+
+}
+
+.bord h4{
+	
+	display: inline-block;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Style for the dropdown button/link */
+.dropdown-button {
+	/* background-color: cornflowerblue; */
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 5px;
+	
+	
+}
+
+/* Style for the dropdown content */
+/* Dropdown content style */
+/* Dropdown content style */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+   /* margin-top: 10px; /* Add margin to adjust vertical alignment */
+    margin-right: 2cm; /* Adjust horizontal alignment */
+    min-width: 160px;
+	opacity: 0.7;
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	opacity: 1;
+}
+
+
+
+/* Style for the dropdown links on hover */
+
+
+/* Show the dropdown content when the dropdown button/link is hovered over */
+.dropdown:hover .dropdown-content {
+	display: block;
+}

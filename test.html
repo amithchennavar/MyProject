@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Bar</title>
+    <script>
+        function updateSearchEngine() {
+            var searchEngineSelect = document.getElementById("searchEngine");
+            var selectedEngine = searchEngineSelect.options[searchEngineSelect.selectedIndex].value;
+            var searchForm = document.getElementById("searchForm");
+            searchForm.action = selectedEngine;
+        }
+    </script>
+</head>
+<body>
+    <h1>Search the Web</h1>
+
+    <form id="searchForm" action="https://www.google.com/search" method="get">
+        <label for="searchEngine">Select Search Engine:</label>
+        <select id="searchEngine" name="searchEngine" onchange="updateSearchEngine()">
+            <option value="https://www.google.com/search">Google</option>
+            <option value="https://www.bing.com/search">Bing</option>
+            <option value="https://search.yahoo.com/search">Yahoo</option>
+            <!-- Add more search engines as needed -->
+        </select>
+
+        <label for="query">Enter your query:</label>
+        <input type="text" id="query" name="q" required>
+
+        <input type="submit" value="Search">
+    </form>
+
+    <div id="searchResults">
+        <!-- Search results will be displayed here -->
+    </div>
+</body>
+</html>
